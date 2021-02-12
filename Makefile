@@ -21,6 +21,9 @@ OPT_OPUS    = -DOPUS
 OPT_PORTAUDIO = -DPORTAUDIO
 OPT_PULSEAUDIO = -DPULSEAUDIO
 
+OPTS = -DPORTAUDIO -DALAC -DOPUS -DRESAMPLE -DGPIO -DLINKALL -DVISEXPORT -DDSD -DUSE_SSL -I/usr/include -I/usr/include/opus -I/usr/include/alac
+
+
 SOURCES = \
 	main.c slimproto.c buffer.c stream.c utils.c \
 	output.c output_alsa.c output_pa.c output_stdout.c output_pack.c output_pulse.c decode.c \
